@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Stundas pēc grafika");
+
+        System.out.print("Ievadiet savu darba laiku: ");
+        String hours_on_schedule = scan.nextLine();
+
+        System.out.print("Ievadiet virsstundu stundas: ");
+        String overtime_hours = scan.nextLine();
+
+        System.out.print("Ievadiet nakts stundas: ");
+        String night_hours = scan.nextLine();
+
+        System.out.println("\nStundu skaits:");
+        System.out.println("Darba stundas: " + hours_on_schedule);
+        System.out.println("Virsstundas: " + overtime_hours);
+        System.out.println("Nakts stundas: " + night_hours);
